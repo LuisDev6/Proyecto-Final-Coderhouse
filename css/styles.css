@@ -61,19 +61,20 @@ body {
 
 /* Estilos del parrafo del inicio */
 .pInicio, .pInicio2, .pNosotros {
-  font-size: 25px;
-  margin-left: 50px;
-  margin-right: 50px; }
+  font-size: 30px;
+  margin-left: 20px;
+  margin-right: 20px; }
 
 .servicios {
-  font-size: 25px;
-  margin-left: 50px;
-  margin-right: 50px; }
+  font-size: 28px;
+  margin-left: 20px;
+  margin-right: 20px; }
 
 /* Uso del extend para un parrafo */
 .pNosotros {
-  font-size: 26px;
-  text-align: left; }
+  text-align: left;
+  margin-left: 50px;
+  margin-right: 50px; }
 
 /* Estilos imagenes del aside */
 .aside__image {
@@ -123,3 +124,7 @@ body {
   background-color: #f3e6cf;
   margin-top: auto;
   text-align: center; }
+
+.pfooter {
+  font-size: 20px;
+  font-weight: bold; }

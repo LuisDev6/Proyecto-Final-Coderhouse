@@ -23,29 +23,31 @@
 }
  /* Estilos del parrafo del inicio */
 .pInicio{
-    font-size: 25px;  
-    margin-left: 50px;
-    margin-right: 50px;  
+    font-size: 30px;  
+    margin-left: 20px;
+    margin-right: 20px;  
 }
 .pInicio2{
     @extend .pInicio;
 }
 
 .servicios{
-    font-size: 25px;
-    margin-left: 50px;
-    margin-right: 50px;
+    font-size: 28px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 /* Uso del extend para un parrafo */
 .pNosotros{
   @extend .pInicio;
-  font-size: 26px;
   text-align: left;
+  margin-left: 50px;
+  margin-right: 50px;
+
 } 
  /* Estilos imagenes del aside */
 .aside__image{
-    display: block;
+    display:block;
     max-width: 100%;
     max-height: 100%;
     margin-bottom: 20px;
@@ -103,6 +105,9 @@
     margin-top: auto;
     text-align: center;
 }
-
+.pfooter{
+    font-size: 20px;
+    font-weight: bold;
+}
 
 
