@@ -1,0 +1,126 @@
+/* Reseteo del CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* Carga de un fonts */
+@font-face {
+  font-family: Lobster;
+  src: url("/fonts/Lobster/Lobster.ttf") format("truetype"); }
+
+/* Estilos del BODY */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+
+/* Uso de mapas */
+/* ESTILOS HEADER */
+.header {
+  background-image: linear-gradient(to right, #FFCDDD, #B762C1); }
+  .header .logoNav img {
+    width: 150px;
+    height: 150px;
+    margin-left: 20px; }
+  .header .nav {
+    font-family: Arial, Helvetica, sans-serif;
+    flex-wrap: nowrap; }
+    .header .nav .menu li {
+      margin: 0px 5px; }
+      .header .nav .menu li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 25px;
+        display: block;
+        text-transform: uppercase;
+        padding: 7px 10px;
+        border-radius: 8px; }
+        .header .nav .menu li a:hover {
+          background-color: #FFABE1;
+          border-radius: 5px; }
+    .header .nav .li--aResaltado {
+      background-color: #6155A6;
+      border-radius: 5px; }
+
+/* Uso de mixin */
+/* Estilos del h1 */
+.h1Main {
+  font-family: Lobster, 'lobster', Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #f3e6cf; }
+
+/* Estilos del h2 */
+.h2Main {
+  font-family: Lobster, 'lobster', Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-bottom: 40px;
+  background-color: white;
+  margin-top: 50px; }
+
+/* Estilos del parrafo del inicio */
+.pInicio, .pInicio2, .pNosotros {
+  font-size: 25px;
+  margin-left: 50px;
+  margin-right: 50px; }
+
+.servicios {
+  font-size: 25px;
+  margin-left: 50px;
+  margin-right: 50px; }
+
+/* Uso del extend para un parrafo */
+.pNosotros {
+  font-size: 26px;
+  text-align: left; }
+
+/* Estilos imagenes del aside */
+.aside__image {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* Estilos del formulario */
+.form--fondo {
+  background-color: #f3e6cf; }
+
+/* Estilos del Iframe con google maps */
+.iframe__ubicacion {
+  margin-top: 50px;
+  border: #6155A6 solid;
+  margin: auto; }
+
+@media (max-width: 2000px) {
+  .slider {
+    max-width: 35%;
+    max-height: 35%; } }
+
+@media (max-width: 900px) {
+  .slider {
+    max-width: 60%;
+    max-height: 60%; } }
+
+@media (max-width: 600px) {
+  .slider {
+    max-width: 90%;
+    max-height: 90%; }
+  .pInicio, .pInicio2, .pNosotros {
+    font-size: 12px; }
+  .pInicio2 {
+    font-size: 12px; }
+  .pNosotros {
+    font-size: 12px; }
+  .servicios {
+    font-size: 12px; } }
+
+/* FOOTER */
+.footer {
+  width: 100%;
+  background-color: #f3e6cf;
+  margin-top: auto;
+  text-align: center; }

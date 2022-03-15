@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>Piu Bello - Turnos</title>
+</head>
+
+<body class="body">
+    <!-- MENU CON BOOTSTRAP -->
+    <header class="header">
+
+        <nav class="nav navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand logoNav animate__animated animate__flipInX" href="../index.html"> <img
+                        src="../images/logoNav.webp" alt="logo"></a>
+
+                <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="menu navbar-nav  mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link li--aResaltado" href="../pages/turnos.html">Turnos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/ubicacion.html">Ubicacion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/galeria.html">Galeria</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+        <h1 class="h1Main">Solicita tu turno</h1>
+
+        <br>
+
+        <section class="d-flex justify-content-center mb-4 ">
+            <div class="card col-sm-8 p-4 form--fondo shadow-lg p-3 mb-5 rounded">
+                <div class="mb-3">
+                    <h4>Reserva tu turno</h4>
+                </div>
+                <div class="mb-2 form--fondo">
+                    <form action="">
+                        <div class="row">
+                            <div class="col mb-2">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" name="nombre" id="nombre"
+                                    placeholder="Ej: Luis">
+                            </div>
+                            <div class="col mb-2">
+                                <label for="apellido" class="form-label">Apellido</label>
+                                <input type="text" class="form-control" name="apellido" id="apellido"
+                                    placeholder="Ej: Amaison">
+                            </div>
+                            <div class="row">
+                            </div>
+                            <div class="col mb-2">
+                                <label for="telefono" class="form-label">Telefono</label>
+                                <input type="number" class="form-control" name="telefono" id="telefono"
+                                    placeholder="Ej: 011-15-1212-1313">
+                            </div>
+                            <div class="col mb-2">
+                                <label for="nombrePerro" class="form-label">Nombre Mascota</label>
+                                <input type="text" class="form-control" name="nombrePerro" id="nombrePerro"
+                                    placeholder="Ej: Manchita">
+                            </div>
+                        </div>
+                        <div class="mb-2">
+                            <label for="aclaraciones" class="form-label">Comentario</label>
+                            <textarea class="form-control" id="aclaraciones" rows="3"
+                                placeholder="Comentanos cualquier cosa que deberiamos saber sobre tu mascota"></textarea>
+                        </div>
+                        <select class="form-select mb-2" aria-label="Default select example">
+                            <option selected>Seleccionar Día</option>
+                            <option value="1">Lunes</option>
+                            <option value="2">Martes</option>
+                            <option value="3">Miercoles</option>
+                            <option value="3">Jueves</option>
+                            <option value="3">Viernes</option>
+                            <option value="3">Sabado</option>
+                        </select>
+                        <select class="form-select mb-2" aria-label="Default select example">
+                            <option selected>Seleccionar Horario</option>
+                            <option value="1">9am</option>
+                            <option value="2">10am</option>
+                            <option value="3">11am</option>
+                            <option value="3">12pm</option>
+                            <option value="3">13pm</option>
+                            <option value="3">15pm</option>
+                            <option value="3">16pm</option>
+                            <option value="3">17pm</option>
+                            <option value="3">18pm</option>
+                        </select>
+                        <div class="row ">
+                            <div class="col form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="servicio" id="corte" value="option1">
+                                <label class="form-check-label" for="inlineRadio1">Corte</label>
+                            </div>
+                            <div class="col form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="servicio" id="corteBaño"
+                                    value="option2">
+                                <label class="form-check-label" for="inlineRadio2">Corte y Baño</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="servicio" id="corteHigienico"
+                                    value="option2">
+                                <label class="form-check-label" for="inlineRadio2">Corte Higienico</label>
+                            </div>
+                            <div class="col form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="servicio" id="BañoSolo"
+                                    value="option3">
+                                <label class="form-check-label" for="inlineRadio3">Baño solo</label>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-6 mt-4">
+                                <button class="btn btn-primary " type="submit">Reservar</button>
+                            </div>
+                            <div class="col-6 mt-4">
+                                <button class="btn btn-primary" type="reset">Borrar</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <h4>Seguinos en redes:</h4>
+        <img src="../images/facebook.webp" alt="logo facebook" height="20" width="20">
+        <img src="../images/twitter.webp" alt="logo twitter" height="20" width="20">
+        <img src="../images/instagram.webp" alt="logo instagram" height="20" width="20">
+    </footer>
+
+    <!-- SCRIPT DE BOOTSTRAP -->
+    <script src="../js/bootstrap.js"></script>
+</body>
+
+</html>
